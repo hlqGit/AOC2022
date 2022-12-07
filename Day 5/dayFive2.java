@@ -11,7 +11,7 @@ public class dayFive2 {
 
         // I know this is tedious but it's my only idea.
 
-        Scanner input = new Scanner(new File("test.dat"));
+        Scanner input = new Scanner(new File("dayFive.dat"));
         Stack<String> stackOne = new Stack<String>();
         Stack<String> stackTwo = new Stack<String>();
         Stack<String> stackThree = new Stack<String>();
@@ -41,7 +41,7 @@ public class dayFive2 {
         stackThree.push("L");
         stackThree.push("G");
         stackThree.push("R");
-        
+
         stackFour.push("L");
         stackFour.push("F");
         stackFour.push("B");
@@ -49,7 +49,7 @@ public class dayFive2 {
         stackFour.push("P");
         stackFour.push("H");
         stackFour.push("M");
-        
+
         stackFive.push("G");
         stackFive.push("C");
         stackFive.push("F");
@@ -67,8 +67,8 @@ public class dayFive2 {
         stackSix.push("L");
 
         stackSeven.push("H");
-        stackSeven.push("S");
         stackSeven.push("F");
+        stackSeven.push("S");
         stackSeven.push("B");
         stackSeven.push("V");
 
@@ -103,55 +103,56 @@ public class dayFive2 {
             int moves = Integer.parseInt(command[1]);
             int from = Integer.parseInt(command[3]);
             int to = Integer.parseInt(command[5]);
+            System.out.println(moves + " " + from + " " + to);
             switch(from){
                 case 1:
                 switch(to){
                     case 2:
                     for(int i = moves; i > 0; i--){
-                        stackTwo.push(stackOne.get(stackOne.size()-moves));
-                        stackOne.remove(stackOne.size()-moves);
+                        stackTwo.push(stackOne.get(stackOne.size()-i));
+                        stackOne.remove(stackOne.size()-i);
                     }
                     break;
                     case 3:
-                    for(int i = 0; i < moves; i++){
-                        stackThree.push(stackOne.get(stackOne.size()-moves));
-                        stackOne.remove(stackOne.size()-moves);
+                    for(int i = moves; i > 0; i--){
+                        stackThree.push(stackOne.get(stackOne.size()-i));
+                        stackOne.remove(stackOne.size()-i);
                     }
                     break;
                     case 4:
-                    for(int i = 0; i < moves; i++){
-                        stackFour.push(stackOne.get(stackOne.size()-moves));
-                        stackOne.remove(stackOne.size()-moves);
+                    for(int i = moves; i > 0; i--){
+                        stackFour.push(stackOne.get(stackOne.size()-i));
+                        stackOne.remove(stackOne.size()-i);
                     }
                     break;
                     case 5:
-                    for(int i = 0; i < moves; i++){
-                        stackFive.push(stackOne.get(stackOne.size()-moves));
-                        stackOne.remove(stackOne.size()-moves);
+                    for(int i = moves; i > 0; i--){
+                        stackFive.push(stackOne.get(stackOne.size()-i));
+                        stackOne.remove(stackOne.size()-i);
                     }
                     break;
                     case 6:
-                    for(int i = 0; i < moves; i++){
-                        stackSix.push(stackOne.get(stackOne.size()-moves));
-                        stackOne.remove(stackOne.size()-moves);
+                    for(int i = moves; i > 0; i--){
+                        stackSix.push(stackOne.get(stackOne.size()-i));
+                        stackOne.remove(stackOne.size()-i);
                     }
                     break;
                     case 7:
-                    for(int i = 0; i < moves; i++){
-                        stackSeven.push(stackOne.get(stackOne.size()-moves));
-                        stackOne.remove(stackOne.size()-moves);
+                    for(int i = moves; i > 0; i--){
+                        stackSeven.push(stackOne.get(stackOne.size()-i));
+                        stackOne.remove(stackOne.size()-i);
                     }
                     break;
                     case 8:
-                    for(int i = 0; i < moves; i++){
-                        stackEight.push(stackOne.get(stackOne.size()-moves));
-                        stackOne.remove(stackOne.size()-moves);
+                    for(int i = moves; i > 0; i--){
+                        stackEight.push(stackOne.get(stackOne.size()-i));
+                        stackOne.remove(stackOne.size()-i);
                     }
                     break;
                     case 9:
-                    for(int i = 0; i < moves; i++){
-                        stackNine.push(stackOne.get(stackOne.size()-moves));
-                        stackOne.remove(stackOne.size()-moves);
+                    for(int i = moves; i > 0; i--){
+                        stackNine.push(stackOne.get(stackOne.size()-i));
+                        stackOne.remove(stackOne.size()-i);
                     }
                     break;
                 }
@@ -159,51 +160,51 @@ public class dayFive2 {
                 case 2:
                 switch(to){
                     case 1:
-                    for(int i = 0; i < moves; i++){
-                        stackOne.push(stackTwo.get(stackTwo.size()-moves));
-                        stackTwo.remove(stackTwo.size()-moves);
+                    for(int i = moves; i > 0; i--){
+                        stackOne.push(stackTwo.get(stackTwo.size()-i));
+                        stackTwo.remove(stackTwo.size()-i);
                     }
                     break;
                     case 3:
-                    for(int i = 0; i < moves; i++){
-                        stackThree.push(stackTwo.get(stackTwo.size()-moves));
-                        stackTwo.remove(stackTwo.size()-moves);
+                    for(int i = moves; i > 0; i--){
+                        stackThree.push(stackTwo.get(stackTwo.size()-i));
+                        stackTwo.remove(stackTwo.size()-i);
                     }
                     break;
                     case 4:
-                    for(int i = 0; i < moves; i++){
-                        stackFour.push(stackTwo.get(stackTwo.size()-moves));
-                        stackTwo.remove(stackTwo.size()-moves);
+                    for(int i = moves; i > 0; i--){
+                        stackFour.push(stackTwo.get(stackTwo.size()-i));
+                        stackTwo.remove(stackTwo.size()-i);
                     }
                     break;
                     case 5:
-                    for(int i = 0; i < moves; i++){
-                        stackFive.push(stackTwo.get(stackTwo.size()-moves));
-                        stackTwo.remove(stackTwo.size()-moves);
+                    for(int i = moves; i > 0; i--){
+                        stackFive.push(stackTwo.get(stackTwo.size()-i));
+                        stackTwo.remove(stackTwo.size()-i);
                     }
                     break;
                     case 6:
-                    for(int i = 0; i < moves; i++){
-                        stackSix.push(stackTwo.get(stackTwo.size()-moves));
-                        stackTwo.remove(stackTwo.size()-moves);
+                    for(int i = moves; i > 0; i--){
+                        stackSix.push(stackTwo.get(stackTwo.size()-i));
+                        stackTwo.remove(stackTwo.size()-i);
                     }
                     break;
                     case 7:
-                    for(int i = 0; i < moves; i++){
-                        stackSeven.push(stackTwo.get(stackTwo.size()-moves));
-                        stackTwo.remove(stackTwo.size()-moves);
+                    for(int i = moves; i > 0; i--){
+                        stackSeven.push(stackTwo.get(stackTwo.size()-i));
+                        stackTwo.remove(stackTwo.size()-i);
                     }
                     break;
                     case 8:
-                    for(int i = 0; i < moves; i++){
-                        stackEight.push(stackTwo.get(stackTwo.size()-moves));
-                        stackTwo.remove(stackTwo.size()-moves);
+                    for(int i = moves; i > 0; i--){
+                        stackEight.push(stackTwo.get(stackTwo.size()-i));
+                        stackTwo.remove(stackTwo.size()-i);
                     }
                     break;
                     case 9:
-                    for(int i = 0; i < moves; i++){
-                        stackNine.push(stackTwo.get(stackTwo.size()-moves));
-                        stackTwo.remove(stackTwo.size()-moves);
+                    for(int i = moves; i > 0; i--){
+                        stackNine.push(stackTwo.get(stackTwo.size()-i));
+                        stackTwo.remove(stackTwo.size()-i);
                     }
                     break;
                 }
@@ -211,51 +212,51 @@ public class dayFive2 {
                 case 3:
                 switch(to){
                     case 1:
-                    for(int i = 0; i < moves; i++){
-                        stackOne.push(stackThree.get(stackThree.size()-moves));
-                        stackThree.remove(stackThree.size()-moves);
+                    for(int i = moves; i > 0; i--){
+                        stackOne.push(stackThree.get(stackThree.size()-i));
+                        stackThree.remove(stackThree.size()-i);
                     }
                     break;
                     case 2:
                     for(int i = moves; i > 0; i--){
-                        stackTwo.push(stackThree.get(stackThree.size()-moves));
-                        stackThree.remove(stackThree.size()-moves);
+                        stackTwo.push(stackThree.get(stackThree.size()-i));
+                        stackThree.remove(stackThree.size()-i);
                     }
                     break;
                     case 4:
-                    for(int i = 0; i < moves; i++){
-                        stackFour.push(stackThree.get(stackThree.size()-moves));
-                        stackThree.remove(stackThree.size()-moves);
+                    for(int i = moves; i > 0; i--){
+                        stackFour.push(stackThree.get(stackThree.size()-i));
+                        stackThree.remove(stackThree.size()-i);
                     }
                     break;
                     case 5:
-                    for(int i = 0; i < moves; i++){
-                        stackFive.push(stackThree.get(stackThree.size()-moves));
-                        stackThree.remove(stackThree.size()-moves);
+                    for(int i = moves; i > 0; i--){
+                        stackFive.push(stackThree.get(stackThree.size()-i));
+                        stackThree.remove(stackThree.size()-i);
                     }
                     break;
                     case 6:
-                    for(int i = 0; i < moves; i++){
-                        stackSix.push(stackThree.get(stackThree.size()-moves));
-                        stackThree.remove(stackThree.size()-moves);
+                    for(int i = moves; i > 0; i--){
+                        stackSix.push(stackThree.get(stackThree.size()-i));
+                        stackThree.remove(stackThree.size()-i);
                     }
                     break;
                     case 7:
-                    for(int i = 0; i < moves; i++){
-                        stackSeven.push(stackThree.get(stackThree.size()-moves));
-                        stackThree.remove(stackThree.size()-moves);
+                    for(int i = moves; i > 0; i--){
+                        stackSeven.push(stackThree.get(stackThree.size()-i));
+                        stackThree.remove(stackThree.size()-i);
                     }
                     break;
                     case 8:
-                    for(int i = 0; i < moves; i++){
-                        stackEight.push(stackThree.get(stackThree.size()-moves));
-                        stackThree.remove(stackThree.size()-moves);
+                    for(int i = moves; i > 0; i--){
+                        stackEight.push(stackThree.get(stackThree.size()-i));
+                        stackThree.remove(stackThree.size()-i);
                     }
                     break;
                     case 9:
-                    for(int i = 0; i < moves; i++){
-                        stackNine.push(stackThree.get(stackThree.size()-moves));
-                        stackThree.remove(stackThree.size()-moves);
+                    for(int i = moves; i > 0; i--){
+                        stackNine.push(stackThree.get(stackThree.size()-i));
+                        stackThree.remove(stackThree.size()-i);
                     }
                     break;
                 }
@@ -263,51 +264,51 @@ public class dayFive2 {
                 case 4:
                 switch(to){
                     case 1:
-                    for(int i = 0; i < moves; i++){
-                        stackOne.push(stackFour.get(stackFour.size()-moves));
-                        stackFour.remove(stackFour.size()-moves);
+                    for(int i = moves; i > 0; i--){
+                        stackOne.push(stackFour.get(stackFour.size()-i));
+                        stackFour.remove(stackFour.size()-i);
                     }
                     break;
                     case 2:
-                    for(int i = 0; i < moves; i++){
-                        stackTwo.push(stackFour.get(stackFour.size()-moves));
-                        stackFour.remove(stackFour.size()-moves);
+                    for(int i = moves; i > 0; i--){
+                        stackTwo.push(stackFour.get(stackFour.size()-i));
+                        stackFour.remove(stackFour.size()-i);
                     }
                     break;
                     case 3:
-                    for(int i = 0; i < moves; i++){
-                        stackThree.push(stackFour.get(stackFour.size()-moves));
-                        stackFour.remove(stackFour.size()-moves);
+                    for(int i = moves; i > 0; i--){
+                        stackThree.push(stackFour.get(stackFour.size()-i));
+                        stackFour.remove(stackFour.size()-i);
                     }
                     break;
                     case 5:
-                    for(int i = 0; i < moves; i++){
-                        stackFive.push(stackFour.get(stackFour.size()-moves));
-                        stackFour.remove(stackFour.size()-moves);
+                    for(int i = moves; i > 0; i--){
+                        stackFive.push(stackFour.get(stackFour.size()-i));
+                        stackFour.remove(stackFour.size()-i);
                     }
                     break;
                     case 6:
-                    for(int i = 0; i < moves; i++){
-                        stackSix.push(stackFour.get(stackFour.size()-moves));
-                        stackFour.remove(stackFour.size()-moves);
+                    for(int i = moves; i > 0; i--){
+                        stackSix.push(stackFour.get(stackFour.size()-i));
+                        stackFour.remove(stackFour.size()-i);
                     }
                     break;
                     case 7:
-                    for(int i = 0; i < moves; i++){
-                        stackSeven.push(stackFour.get(stackFour.size()-moves));
-                        stackFour.remove(stackFour.size()-moves);
+                    for(int i = moves; i > 0; i--){
+                        stackSeven.push(stackFour.get(stackFour.size()-i));
+                        stackFour.remove(stackFour.size()-i);
                     }
                     break;
                     case 8:
-                    for(int i = 0; i < moves; i++){
-                        stackEight.push(stackFour.get(stackFour.size()-moves));
-                        stackFour.remove(stackFour.size()-moves);
+                    for(int i = moves; i > 0; i--){
+                        stackEight.push(stackFour.get(stackFour.size()-i));
+                        stackFour.remove(stackFour.size()-i);
                     }
                     break;
                     case 9:
-                    for(int i = 0; i < moves; i++){
-                        stackNine.push(stackFour.get(stackFour.size()-moves));
-                        stackFour.remove(stackFour.size()-moves);
+                    for(int i = moves; i > 0; i--){
+                        stackNine.push(stackFour.get(stackFour.size()-i));
+                        stackFour.remove(stackFour.size()-i);
                     }
                     break;
                 }
@@ -315,51 +316,51 @@ public class dayFive2 {
                 case 5:
                 switch(to){
                     case 1:
-                    for(int i = 0; i < moves; i++){
-                        stackOne.push(stackFive.get(stackFive.size()-moves));
-                        stackFive.remove(stackFive.size()-moves);
+                    for(int i = moves; i > 0; i--){
+                        stackOne.push(stackFive.get(stackFive.size()-i));
+                        stackFive.remove(stackFive.size()-i);
                     }
                     break;
                     case 2:
-                    for(int i = 0; i < moves; i++){
-                        stackTwo.push(stackFive.get(stackFive.size()-moves));
-                        stackFive.remove(stackFive.size()-moves);
+                    for(int i = moves; i > 0; i--){
+                        stackTwo.push(stackFive.get(stackFive.size()-i));
+                        stackFive.remove(stackFive.size()-i);
                     }
                     break;
                     case 3:
-                    for(int i = 0; i < moves; i++){
-                        stackThree.push(stackFive.get(stackFive.size()-moves));
-                        stackFive.remove(stackFive.size()-moves);
+                    for(int i = moves; i > 0; i--){
+                        stackThree.push(stackFive.get(stackFive.size()-i));
+                        stackFive.remove(stackFive.size()-i);
                     }
                     break;
                     case 4:
-                    for(int i = 0; i < moves; i++){
-                        stackFour.push(stackFive.get(stackFive.size()-moves));
-                        stackFive.remove(stackFive.size()-moves);
+                    for(int i = moves; i > 0; i--){
+                        stackFour.push(stackFive.get(stackFive.size()-i));
+                        stackFive.remove(stackFive.size()-i);
                     }
                     break;
                     case 6:
-                    for(int i = 0; i < moves; i++){
-                        stackSix.push(stackFive.get(stackFive.size()-moves));
-                        stackFive.remove(stackFive.size()-moves);
+                    for(int i = moves; i > 0; i--){
+                        stackSix.push(stackFive.get(stackFive.size()-i));
+                        stackFive.remove(stackFive.size()-i);
                     }
                     break;
                     case 7:
-                    for(int i = 0; i < moves; i++){
-                        stackSeven.push(stackFive.get(stackFive.size()-moves));
-                        stackFive.remove(stackFive.size()-moves);
+                    for(int i = moves; i > 0; i--){
+                        stackSeven.push(stackFive.get(stackFive.size()-i));
+                        stackFive.remove(stackFive.size()-i);
                     }
                     break;
                     case 8:
-                    for(int i = 0; i < moves; i++){
-                        stackEight.push(stackFive.get(stackFive.size()-moves));
-                        stackFive.remove(stackFive.size()-moves);
+                    for(int i = moves; i > 0; i--){
+                        stackEight.push(stackFive.get(stackFive.size()-i));
+                        stackFive.remove(stackFive.size()-i);
                     }
                     break;
                     case 9:
-                    for(int i = 0; i < moves; i++){
-                        stackNine.push(stackFive.get(stackFive.size()-moves));
-                        stackFive.remove(stackFive.size()-moves);
+                    for(int i = moves; i > 0; i--){
+                        stackNine.push(stackFive.get(stackFive.size()-i));
+                        stackFive.remove(stackFive.size()-i);
                     }
                     break;
                 }
@@ -367,51 +368,51 @@ public class dayFive2 {
                 case 6:
                 switch(to){
                     case 1:
-                    for(int i = 0; i < moves; i++){
-                        stackOne.push(stackSix.get(stackSix.size()-moves));
-                        stackSix.remove(stackSix.size()-moves);
+                    for(int i = moves; i > 0; i--){
+                        stackOne.push(stackSix.get(stackSix.size()-i));
+                        stackSix.remove(stackSix.size()-i);
                     }
                     break;
                     case 2:
-                    for(int i = 0; i < moves; i++){
-                        stackTwo.push(stackSix.get(stackSix.size()-moves));
-                        stackSix.remove(stackSix.size()-moves);
+                    for(int i = moves; i > 0; i--){
+                        stackTwo.push(stackSix.get(stackSix.size()-i));
+                        stackSix.remove(stackSix.size()-i);
                     }
                     break;
                     case 3:
-                    for(int i = 0; i < moves; i++){
-                        stackThree.push(stackSix.get(stackSix.size()-moves));
-                        stackSix.remove(stackSix.size()-moves);
+                    for(int i = moves; i > 0; i--){
+                        stackThree.push(stackSix.get(stackSix.size()-i));
+                        stackSix.remove(stackSix.size()-i);
                     }
                     break;
                     case 4:
-                    for(int i = 0; i < moves; i++){
-                        stackFour.push(stackSix.get(stackSix.size()-moves));
-                        stackSix.remove(stackSix.size()-moves);
+                    for(int i = moves; i > 0; i--){
+                        stackFour.push(stackSix.get(stackSix.size()-i));
+                        stackSix.remove(stackSix.size()-i);
                     }
                     break;
                     case 5:
-                    for(int i = 0; i < moves; i++){
-                        stackFive.push(stackSix.get(stackSix.size()-moves));
-                        stackSix.remove(stackSix.size()-moves);
+                    for(int i = moves; i > 0; i--){
+                        stackFive.push(stackSix.get(stackSix.size()-i));
+                        stackSix.remove(stackSix.size()-i);
                     }
                     break;
                     case 7:
-                    for(int i = 0; i < moves; i++){
-                        stackSeven.push(stackSix.get(stackSix.size()-moves));
-                        stackSix.remove(stackSix.size()-moves);
+                    for(int i = moves; i > 0; i--){
+                        stackSeven.push(stackSix.get(stackSix.size()-i));
+                        stackSix.remove(stackSix.size()-i);
                     }
                     break;
                     case 8:
-                    for(int i = 0; i < moves; i++){
-                        stackEight.push(stackSix.get(stackSix.size()-moves));
-                        stackSix.remove(stackSix.size()-moves);
+                    for(int i = moves; i > 0; i--){
+                        stackEight.push(stackSix.get(stackSix.size()-i));
+                        stackSix.remove(stackSix.size()-i);
                     }
                     break;
                     case 9:
-                    for(int i = 0; i < moves; i++){
-                        stackNine.push(stackSix.get(stackSix.size()-moves));
-                        stackSix.remove(stackSix.size()-moves);
+                    for(int i = moves; i > 0; i--){
+                        stackNine.push(stackSix.get(stackSix.size()-i));
+                        stackSix.remove(stackSix.size()-i);
                     }
                     break;
                 }
@@ -419,51 +420,51 @@ public class dayFive2 {
                 case 7:
                 switch(to){
                     case 1:
-                    for(int i = 0; i < moves; i++){
-                        stackOne.push(stackSeven.get(stackSeven.size()-moves));
-                        stackSeven.remove(stackSeven.size()-moves);
+                    for(int i = moves; i > 0; i--){
+                        stackOne.push(stackSeven.get(stackSeven.size()-i));
+                        stackSeven.remove(stackSeven.size()-i);
                     }
                     break;
                     case 2:
-                    for(int i = 0; i < moves; i++){
-                        stackTwo.push(stackSeven.get(stackSeven.size()-moves));
-                        stackSeven.remove(stackSeven.size()-moves);
+                    for(int i = moves; i > 0; i--){
+                        stackTwo.push(stackSeven.get(stackSeven.size()-i));
+                        stackSeven.remove(stackSeven.size()-i);
                     }
                     break;
                     case 3:
-                    for(int i = 0; i < moves; i++){
-                        stackThree.push(stackSeven.get(stackSeven.size()-moves));
-                        stackSeven.remove(stackSeven.size()-moves);
+                    for(int i = moves; i > 0; i--){
+                        stackThree.push(stackSeven.get(stackSeven.size()-i));
+                        stackSeven.remove(stackSeven.size()-i);
                     }
                     break;
                     case 4:
-                    for(int i = 0; i < moves; i++){
-                        stackFour.push(stackSeven.get(stackSeven.size()-moves));
-                        stackSeven.remove(stackSeven.size()-moves);
+                    for(int i = moves; i > 0; i--){
+                        stackFour.push(stackSeven.get(stackSeven.size()-i));
+                        stackSeven.remove(stackSeven.size()-i);
                     }
                     break;
                     case 5:
-                    for(int i = 0; i < moves; i++){
-                        stackFive.push(stackSeven.get(stackSeven.size()-moves));
-                        stackSeven.remove(stackSeven.size()-moves);
+                    for(int i = moves; i > 0; i--){
+                        stackFive.push(stackSeven.get(stackSeven.size()-i));
+                        stackSeven.remove(stackSeven.size()-i);
                     }
                     break;
                     case 6:
-                    for(int i = 0; i < moves; i++){
-                        stackSix.push(stackSeven.get(stackSeven.size()-moves));
-                        stackSeven.remove(stackSeven.size()-moves);
+                    for(int i = moves; i > 0; i--){
+                        stackSix.push(stackSeven.get(stackSeven.size()-i));
+                        stackSeven.remove(stackSeven.size()-i);
                     }
                     break;
                     case 8:
-                    for(int i = 0; i < moves; i++){
-                        stackEight.push(stackSeven.get(stackSeven.size()-moves));
-                        stackSeven.remove(stackSeven.size()-moves);
+                    for(int i = moves; i > 0; i--){
+                        stackEight.push(stackSeven.get(stackSeven.size()-i));
+                        stackSeven.remove(stackSeven.size()-i);
                     }
                     break;
                     case 9:
-                    for(int i = 0; i < moves; i++){
-                        stackNine.push(stackSeven.get(stackSeven.size()-moves));
-                        stackSeven.remove(stackSeven.size()-moves);
+                    for(int i = moves; i > 0; i--){
+                        stackNine.push(stackSeven.get(stackSeven.size()-i));
+                        stackSeven.remove(stackSeven.size()-i);
                     }
                     break;
                 }
@@ -471,51 +472,51 @@ public class dayFive2 {
                 case 8:
                 switch(to){
                     case 1:
-                    for(int i = 0; i < moves; i++){
-                        stackOne.push(stackEight.get(stackEight.size()-moves));
-                        stackEight.remove(stackEight.size()-moves);
+                    for(int i = moves; i > 0; i--){
+                        stackOne.push(stackEight.get(stackEight.size()-i));
+                        stackEight.remove(stackEight.size()-i);
                     }
                     break;
                     case 2:
-                    for(int i = 0; i < moves; i++){
-                        stackTwo.push(stackEight.get(stackEight.size()-moves));
-                        stackEight.remove(stackEight.size()-moves);
+                    for(int i = moves; i > 0; i--){
+                        stackTwo.push(stackEight.get(stackEight.size()-i));
+                        stackEight.remove(stackEight.size()-i);
                     }
                     break;
                     case 3:
-                    for(int i = 0; i < moves; i++){
-                        stackThree.push(stackEight.get(stackEight.size()-moves));
-                        stackEight.remove(stackEight.size()-moves);
+                    for(int i = moves; i > 0; i--){
+                        stackThree.push(stackEight.get(stackEight.size()-i));
+                        stackEight.remove(stackEight.size()-i);
                     }
                     break;
                     case 4:
-                    for(int i = 0; i < moves; i++){
-                        stackFour.push(stackEight.get(stackEight.size()-moves));
-                        stackEight.remove(stackEight.size()-moves);
+                    for(int i = moves; i > 0; i--){
+                        stackFour.push(stackEight.get(stackEight.size()-i));
+                        stackEight.remove(stackEight.size()-i);
                     }
                     break;
                     case 5:
-                    for(int i = 0; i < moves; i++){
-                        stackFive.push(stackEight.get(stackEight.size()-moves));
-                        stackEight.remove(stackEight.size()-moves);
+                    for(int i = moves; i > 0; i--){
+                        stackFive.push(stackEight.get(stackEight.size()-i));
+                        stackEight.remove(stackEight.size()-i);
                     }
                     break;
                     case 6:
-                    for(int i = 0; i < moves; i++){
-                        stackSix.push(stackEight.get(stackEight.size()-moves));
-                        stackEight.remove(stackEight.size()-moves);
+                    for(int i = moves; i > 0; i--){
+                        stackSix.push(stackEight.get(stackEight.size()-i));
+                        stackEight.remove(stackEight.size()-i);
                     }
                     break;
                     case 7:
-                    for(int i = 0; i < moves; i++){
-                        stackSeven.push(stackEight.get(stackEight.size()-moves));
-                        stackEight.remove(stackEight.size()-moves);
+                    for(int i = moves; i > 0; i--){
+                        stackSeven.push(stackEight.get(stackEight.size()-i));
+                        stackEight.remove(stackEight.size()-i);
                     }
                     break;
                     case 9:
-                    for(int i = 0; i < moves; i++){
-                        stackNine.push(stackEight.get(stackEight.size()-moves));
-                        stackEight.remove(stackEight.size()-moves);
+                    for(int i = moves; i > 0; i--){
+                        stackNine.push(stackEight.get(stackEight.size()-i));
+                        stackEight.remove(stackEight.size()-i);
                     }
                     break;
                 }
@@ -523,51 +524,51 @@ public class dayFive2 {
                 case 9:
                 switch(to){
                     case 1:
-                    for(int i = 0; i < moves; i++){
-                        stackOne.push(stackNine.get(stackNine.size()-moves));
-                        stackNine.remove(stackNine.size()-moves);
+                    for(int i = moves; i > 0; i--){
+                        stackOne.push(stackNine.get(stackNine.size()-i));
+                        stackNine.remove(stackNine.size()-i);
                     }
                     break;
                     case 2:
-                    for(int i = 0; i < moves; i++){
-                        stackTwo.push(stackNine.get(stackNine.size()-moves));
-                        stackNine.remove(stackNine.size()-moves);
+                    for(int i = moves; i > 0; i--){
+                        stackTwo.push(stackNine.get(stackNine.size()-i));
+                        stackNine.remove(stackNine.size()-i);
                     }
                     break;
                     case 3:
-                    for(int i = 0; i < moves; i++){
-                        stackThree.push(stackNine.get(stackNine.size()-moves));
-                        stackNine.remove(stackNine.size()-moves);
+                    for(int i = moves; i > 0; i--){
+                        stackThree.push(stackNine.get(stackNine.size()-i));
+                        stackNine.remove(stackNine.size()-i);
                     }
                     break;
                     case 4:
-                    for(int i = 0; i < moves; i++){
-                        stackFour.push(stackNine.get(stackNine.size()-moves));
-                        stackNine.remove(stackNine.size()-moves);
+                    for(int i = moves; i > 0; i--){
+                        stackFour.push(stackNine.get(stackNine.size()-i));
+                        stackNine.remove(stackNine.size()-i);
                     }
                     break;
                     case 5:
-                    for(int i = 0; i < moves; i++){
-                        stackFive.push(stackNine.get(stackNine.size()-moves));
-                        stackNine.remove(stackNine.size()-moves);
+                    for(int i = moves; i > 0; i--){
+                        stackFive.push(stackNine.get(stackNine.size()-i));
+                        stackNine.remove(stackNine.size()-i);
                     }
                     break;
                     case 6:
-                    for(int i = 0; i < moves; i++){
-                        stackSix.push(stackNine.get(stackNine.size()-moves));
-                        stackNine.remove(stackNine.size()-moves);
+                    for(int i = moves; i > 0; i--){
+                        stackSix.push(stackNine.get(stackNine.size()-i));
+                        stackNine.remove(stackNine.size()-i);
                     }
                     break;
                     case 7:
-                    for(int i = 0; i < moves; i++){
-                        stackSeven.push(stackNine.get(stackNine.size()-moves));
-                        stackNine.remove(stackNine.size()-moves);
+                    for(int i = moves; i > 0; i--){
+                        stackSeven.push(stackNine.get(stackNine.size()-i));
+                        stackNine.remove(stackNine.size()-i);
                     }
                     break;
                     case 8:
-                    for(int i = 0; i < moves; i++){
-                        stackEight.push(stackNine.get(stackNine.size()-moves));
-                        stackNine.remove(stackNine.size()-moves);
+                    for(int i = moves; i > 0; i--){
+                        stackEight.push(stackNine.get(stackNine.size()-i));
+                        stackNine.remove(stackNine.size()-i);
                     }
                     break;
                 }
