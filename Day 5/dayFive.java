@@ -103,7 +103,6 @@ public class dayFive {
             int moves = Integer.parseInt(command[1]);
             int from = Integer.parseInt(command[3]);
             int to = Integer.parseInt(command[5]);
-            System.out.println(moves + " " + from + " " + to);
             switch(from){
                 case 1:
                 switch(to){
@@ -368,5 +367,7 @@ public class dayFive {
         System.out.println(stackSeven.toString());
         System.out.println(stackEight.toString());
         System.out.println(stackNine.toString());
+
+        System.out.println(stackSix.get(stackSix.size()-3));
     }
 }
